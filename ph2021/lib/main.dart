@@ -94,8 +94,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Introduction to our App here',
-              style: Theme.of(context).textTheme.headline4,
+              'App Title',
+              style: TextStyle(fontSize: 42),
             ),
           ],
         ),
