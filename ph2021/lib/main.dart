@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.lightBlue,
       ),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
@@ -89,15 +89,24 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'App Title',
-              style: TextStyle(fontSize: 42),
+              'Welcome...',
+              style: TextStyle(fontSize: 42, fontStyle: FontStyle.italic),
+            ),
+            Padding( padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+
+            child: Text(
+              'Many talented women of color have broken through the glass ceiling to achieve success in Science, Technology, Engineering, and Mathematics... can they guide you to break free from these puzzles?',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 15, fontStyle: FontStyle.italic),
+            ),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/game');
               },
               child: Text(
-                "Start Game",
+                "I'm ready!",
+                style: TextStyle(fontSize: 18),
               ),
             )
           ],
