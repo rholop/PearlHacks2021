@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_view/quiz_view.dart';
 import 'package:ph2021/clues/clue1.dart';
+import 'package:ph2021/clues/clue2.dart';
+import 'package:ph2021/clues/clue3.dart';
+import 'package:ph2021/clues/clue4.dart';
+import 'package:ph2021/clues/clue5.dart';
+import 'package:ph2021/clues/clue6.dart';
+import 'package:ph2021/clues/clue7.dart';
+import 'package:ph2021/clues/clue8.dart';
+import 'package:ph2021/clues/clue9.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -12,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PH 2021',
+      title: 'Breaking Out!',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -31,7 +40,7 @@ class MyApp extends StatelessWidget {
         '/game': (BuildContext context) => SecondScreen(),
         '/clue1': (BuildContext context) => Clue1(),
         //'/clue2': (BuildContext context) => Clue2(),
-        //'/clue3': (BuildContext context) => Clue3(),
+        '/clue3': (BuildContext context) => Clue3(),
         //'/clue4': (BuildContext context) => Clue4(),
         //'/clue5': (BuildContext context) => Clue5(),
         //'/clue6': (BuildContext context) => Clue6(),
@@ -78,7 +87,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        //title: Text(widget.title),
+        title: Text('Breaking Out!'),
+
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -147,14 +157,13 @@ class _SecondScreenWidgetState extends State<SecondScreen> {
       x = details.globalPosition.dx;
       y = details.globalPosition.dy;
       if(x > 25 && x < 75 && y > 363 && y < 413) {
-        print("Clue1");
         Navigator.pushNamed(context, '/clue1');
       }
       else if(x > 24 && x < 74 && y > 593&& y < 643) {
         print("Clue2");
       }
       else if(x > 158 && x < 208 && y > 467&& y < 527) {
-        print("Clue3");
+        Navigator.pushNamed(context, '/clue3');
       }
       else if(x > 179 && x < 229 && y > 382 && y < 432) {
         print("Clue4");
