@@ -51,7 +51,7 @@ flutter:
      - assets/images/lab2.jpeg
      - assets/images/credits.jpg
      - assets/images/thanks.jpg
-  #   - images/a_dot_ham.jpeg
+     - assets/images/solutions.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

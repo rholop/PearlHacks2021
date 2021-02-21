@@ -9,6 +9,7 @@ import 'package:ph2021/clues/clue6.dart';
 import 'package:ph2021/clues/clue7.dart';
 import 'package:ph2021/clues/clue8.dart';
 import 'package:ph2021/clues/clue9.dart';
+import 'package:ph2021/info/infopage.dart';
 
 
 void main() {
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => MyHomePage(),
+        '/info': (BuildContext context) => InfoPage(),
         '/game': (BuildContext context) => SecondScreen(),
         '/clue1': (BuildContext context) => Clue1(),
         '/clue2': (BuildContext context) => Clue2(),
@@ -121,6 +123,15 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 15, fontStyle: FontStyle.italic),
             ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/info');
+              },
+              child: Text(
+                "Info Guide - Start here!",
+                style: TextStyle(fontSize: 18),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
