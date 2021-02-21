@@ -118,17 +118,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
 class SecondScreen extends StatelessWidget {
   @override
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Second Screen"),
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage("assets/images/lab.jpeg"), fit: BoxFit.cover),
       ),
-      body: Center(
-        child: Text(
-          'Game here!',
-        ),
-      ),
+      child: null,
     );
   }
-}
+  }
 
