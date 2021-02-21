@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_view/quiz_view.dart';
+import 'package:ph2021/clues/clue1.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => MyHomePage(),
         '/game': (BuildContext context) => SecondScreen(),
-        //'/clue1': (BuildContext context) => Clue1(),
+        '/clue1': (BuildContext context) => Clue1(),
         //'/clue2': (BuildContext context) => Clue2(),
         //'/clue3': (BuildContext context) => Clue3(),
         //'/clue4': (BuildContext context) => Clue4(),
@@ -146,6 +148,7 @@ class _SecondScreenWidgetState extends State<SecondScreen> {
       y = details.globalPosition.dy;
       if(x > 25 && x < 75 && y > 363 && y < 413) {
         print("Clue1");
+        Navigator.pushNamed(context, '/clue1');
       }
       else if(x > 24 && x < 74 && y > 593&& y < 643) {
         print("Clue2");
