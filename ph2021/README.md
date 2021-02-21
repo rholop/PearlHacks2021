@@ -6,7 +6,7 @@ An escape room game where you learn about amazing women of color who've broken b
 
 ## Hackers
 
-Rowan Holop, Ella Thompson, Christina , Tina Giorgadze
+Rowan Holop, Ella Thompson, Christina Persaud, Tina Giorgadze
 <br>
 <br>
 **Made at Pearl Hacks 2021**
