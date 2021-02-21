@@ -39,14 +39,14 @@ class MyApp extends StatelessWidget {
         '/': (BuildContext context) => MyHomePage(),
         '/game': (BuildContext context) => SecondScreen(),
         '/clue1': (BuildContext context) => Clue1(),
-        //'/clue2': (BuildContext context) => Clue2(),
+        '/clue2': (BuildContext context) => Clue2(),
         '/clue3': (BuildContext context) => Clue3(),
-        //'/clue4': (BuildContext context) => Clue4(),
-        //'/clue5': (BuildContext context) => Clue5(),
-        //'/clue6': (BuildContext context) => Clue6(),
-        //'/clue7': (BuildContext context) => Clue7(),
-        //'/clue8': (BuildContext context) => Clue8(),
-        //'/clue9': (BuildContext context) => Clue9(),
+        '/clue4': (BuildContext context) => Clue4(),
+        '/clue5': (BuildContext context) => Clue5(),
+        '/clue6': (BuildContext context) => Clue6(),
+        '/clue7': (BuildContext context) => Clue7(),
+        '/clue8': (BuildContext context) => Clue8(),
+        '/clue9': (BuildContext context) => Clue9(),
 
       },
       //home: MyHomePage(title: 'Starting Page'),
@@ -160,28 +160,28 @@ class _SecondScreenWidgetState extends State<SecondScreen> {
         Navigator.pushNamed(context, '/clue1');
       }
       else if(x > 24 && x < 74 && y > 593&& y < 643) {
-        print("Clue2");
+        Navigator.pushNamed(context, '/clue2');
       }
       else if(x > 158 && x < 208 && y > 467&& y < 527) {
         Navigator.pushNamed(context, '/clue3');
       }
       else if(x > 179 && x < 229 && y > 382 && y < 432) {
-        print("Clue4");
+        Navigator.pushNamed(context, '/clue4');
       }
       else if(x > 243 && x < 298 && y > 367 && y < 417) {
-        print("Clue5");
+        Navigator.pushNamed(context, '/clue5');
       }
       else if(x > 307 && x < 357 && y > 401 && y < 451) {
-        print("Clue6");
+        Navigator.pushNamed(context, '/clue6');
       }
       else if(x > 181 && x < 231 && y > 279 && y < 329) {
-        print("Clue7");
+        Navigator.pushNamed(context, '/clue7');
       }
       else if(x > 308 && x < 358 && y > 603 && y < 653) {
-        print("Clue8");
+        Navigator.pushNamed(context, '/clue8');
       }
       else if(x > 225 && x < 275 && y > 479&& y < 529) {
-        print("Clue9");
+        Navigator.pushNamed(context, '/clue9');
       }
     });
   }

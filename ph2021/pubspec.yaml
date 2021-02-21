@@ -49,7 +49,7 @@ flutter:
   assets:
      - assets/images/lab.jpeg
      - assets/images/lab2.jpeg
-     - assets/images/credit.jpg
+     - assets/images/credits.jpg
      - assets/images/thanks.jpg
   #   - images/a_dot_ham.jpeg
 
